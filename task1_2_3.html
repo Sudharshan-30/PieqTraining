@@ -2,31 +2,30 @@
     <head> 
         <title>Profile Page</title>
         <style>
-            .profile{
-                background-color: lightblue;
+            body{
+                background-color: white;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                border: 2px solid black;
                 padding: 20px;
             }
             
-            .profile img{
+            img{
                 border: 2px solid darkblue;
             }
 
-            .profile h1,h3{
+            h1,h3{
                 font-family: cursive;
-                color: blue;
+                color: black;
             }
 
-            .profile p{
+            p{
                 font-family: Courier;
                 font-weight: bolder;
                 color: rebeccapurple;
             }
 
-            .profile ul{
+            ul{
                 font-family: Courier;
                 font-weight: bolder;
                 list-style-type: square;
@@ -40,27 +39,25 @@
             }
         </style>
     </head>
-    <body>
-        <div class="profile" id="profile">
-            <h1>Sudharshan D</h1>
-            <img src="C:\Tasks\PHOTO-2026-02-22-13-30-17.jpg" alt="Profile Photo" width="250" height="250">
-            <p>I’m Sudharshan, a Computer Science and Engineering student at Easwari Engineering College with a CGPA of 8.26. I have a strong foundation in Java programming and Data Structures. Recently, I’ve been working with Spring Boot to build backend applications and connect them with PostgreSQL databases. I also have good knowledge of SQL, including writing queries, joins, and performing database operations. I have strong problem-solving skills and have always been good at mathematics and logical thinking. I understand concepts quickly and adapt fast to new technologies, which makes me a quick learner. Alongside this, I’m building my foundation in Data Science and have completed two projects — an Employee Attrition Prediction system using ensemble models with SHAP for explainability, and an SMS Spam Classification system deployed using Streamlit. I also served as a Class Representative for two years, which helped me develop leadership and communication skills. Outside academics, I enjoy gaming, cooking, and watching shows during my free time.</p>
-            <h3>Hobbies</h3>
-            <ul>
-                <li>Gaming</li>
-                <li>Binge Watching</li>
-                <li>Music</li>
-                <li>Scrolling</li>
-            </ul>
-            <button onclick="changeColor()">Change Background Color</button>
-        </div>
+    <body id="mainBody">
+        <h1>Sudharshan D</h1>
+        <img src="C:\Tasks\PHOTO-2026-02-22-13-30-17.jpg" alt="Profile Photo" width="250" height="250">
+        <p>I’m Sudharshan, a Computer Science and Engineering student at Easwari Engineering College with a CGPA of 8.26. I have a strong foundation in Java programming and Data Structures. Recently, I’ve been working with Spring Boot to build backend applications and connect them with PostgreSQL databases. I also have good knowledge of SQL, including writing queries, joins, and performing database operations. I have strong problem-solving skills and have always been good at mathematics and logical thinking. I understand concepts quickly and adapt fast to new technologies, which makes me a quick learner. Alongside this, I’m building my foundation in Data Science and have completed two projects — an Employee Attrition Prediction system using ensemble models with SHAP for explainability, and an SMS Spam Classification system deployed using Streamlit. I also served as a Class Representative for two years, which helped me develop leadership and communication skills. Outside academics, I enjoy gaming, cooking, and watching shows during my free time.</p>
+        <h3>Hobbies</h3>
+        <ul>
+            <li>Gaming</li>
+            <li>Binge Watching</li>
+            <li>Music</li>
+            <li>Scrolling</li>
+        </ul>
+        <button onclick="changeColor()">Change Background Color</button>
         <script>
             function changeColor() {
                 let r = Math.floor(Math.random() * 256);
                 let g = Math.floor(Math.random() * 256);
                 let b = Math.floor(Math.random() * 256);
                 let color = "rgb(" + r + "," + g + "," + b + ")";
-                document.getElementById("profile").style.backgroundColor = color;
+                document.getElementById("mainBody").style.backgroundColor = color;
             }
         </script>
     </body>
