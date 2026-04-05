@@ -1,6 +1,6 @@
 # 🌐 Basic Web Development Tasks – Completed
 
-I have successfully completed all the required tasks for **Part 1: Basic Web Development (HTML, CSS, JavaScript)**. Below is a summary of what was implemented:
+I have successfully completed all the required tasks for **Basic Web Development (HTML, CSS, JavaScript)**. Below is a summary of what was implemented:
 
 ## ✅ Task 1: Semantic HTML Profile Page
 
