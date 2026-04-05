@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>Form Validation</title>
+        <style>
+            body {
+                font-family: Arial;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #f0f0f0;
+            }
+
+            .container {
+                background: white;
+                padding: 20px;
+                border-radius: 10px;
+                width: 300px;
+                text-align: center;
+            }
+
+            input {
+                width: 90%;
+                padding: 8px;
+                margin: 8px 0;
+            }
+
+            button {
+                padding: 10px;
+                cursor: pointer;
+            }
+
+            .error {
+                color: red;
+                margin-top: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Contact Form</h1>
+            <form id="myForm">
+                <input type="text" id="name" placeholder="Enter Name">
+                <br>
+                <input type="email" id="email" placeholder="Enter Email">
+                <br>
+                <button type="submit">Submit</button>
+            </form>
+            <p id="errorMsg" class="error"></p>
+        </div>
+        <script>
+            let form = document.getElementById("myForm")
+            form.addEventListener("submit", function(event){
+                let name = document.getElementById("name").value;
+                let mail = document.getElementById("email").value;
+                let error = document.getElementById("errorMsg");
+                if(name === "" || mail === ""){
+                    event.preventDefault();
+                    error.textContent = "Please fill all fields!";
+                }
+                else{
+                    error.textContent = "";
+                }
+            });
+        </script>
+    </body>
+</html>
